@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charaset=UTF-8">
+
+  <title>Galaxy</title>
+
+  <meta name="description" content="">
+
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="./normalize.css">
+
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./noname2.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script>
+      // 画面上部にスクロールするボタン
+      $(function() {
+          var pageTop = $('.btn-pagetop');
+          pageTop.hide();
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 175) {
+                  pageTop.fadeIn();
+              } else {
+                  pageTop.fadeOut();
+              }
+          });
+          pageTop.click(function() {
+              $('body, html').animate({
+                  scrollTop: 0
+              }, 500, 'swing');
+              pageTop.blur();
+              return false;
+          });
+      });
+  </script>
+
+</head>
+
+<body id="top"><!--画面上部のとこ-->
+
+  <div class="header">
+    <h1 class="header-title">騎空団 Galaxy</h1>
+
+    <p class="header-detail">このサイトはCygamesが運営するオンラインゲーム「グランブルーファンタジー」のファンサイトです</p>
+
+  </div><!--Topの終わり-->
+
+    <div class="main-img">
+
+      <img src="./img/background.jpg" alt="background" class="fix"/>
+
+      <img src="./img/Tweyen.png" alt="background_Tweyen" class="absolute headerimages" />
+
+      <img src="./img/Henriette.png" alt="background_Henriette" class="absolute2 headerimages" />
+
+      <img src="./img/logo.png" alt="background_logo" class="absolute3 headerimages" />
+
+    </div><!--main-imgの終わり-->
+
+      <div class="body">
+
+        <div class="nav">
+
+          <ul class="nav-group">
+
+            <li>
+              <a href="http://game.granbluefantasy.jp/" target="_blank" class="active">
+              <i class"fa fa-home"></i>&nbsp;グラブルへ(Pc版)
+              </a>
+            <li>
+
+            <li>
+              <a href="http://graburugalaxy.web.fc2.com/Testver/index.html">団の詳細</a>
+            </li>
+
+            <li>
+              <a href="Galaxy_rule">Galaxy規則</a>
+            </li>
+
+          </ul><!--nav-groupの終了-->
+
+        </div><!--navの終了-->
+
+        <div class="main">
+
+          <div class="article">
+
+            <div class="article-date" id="Galaxy_rule">
+              <i class="fa fa-clock-o"></i>&nbsp;2017年xx月xx日
+            </div><!--list-dateの終了-->
+
+            <h1 class="article-title">Galaxy規則</h1>
+
+            <embed class="img-rounded article-img" alt="#" src="Galaxy.pdf" width="500" height="300"/>
+
+            <p class="article-paragraph">
+              規則は上のPDFを見てください。見づらければDL(ダウンロード)して見てください。
+            </p>
+
+            <h2 class="article-paragraph-title">
+              ほぼ）毎日やっている団内イベント
+            </h2>
+
+            <p class="article-paragraph">
+              月曜日: セレスト<br>
+              火曜日: コロッサス<br>
+              水曜日: リヴァイアサン<br>
+              木曜日: ティアマト<br>
+              金曜日: シュバリエ<br>
+              土曜日: ユグドラシル<br>
+              日曜日: 直近のイベントの有利属性のマグナ<br>
+
+            <p>上記のマグナをAT(アサルトタイム)中に合計５回出しています。初心者の方はこれに参加するだけである程度武器を集めれて、強くなれるはずです。<br>
+            また、団長と副団長が都合で無理な時はLobiで通知するので特別な事情がない限りLobiに入ってくれていた方がありがたいです。<br>
+            団員が出している場合もあるのでそれを見た時は是非にご参加を。<br>
+            </p>
+
+          </div><!--articleの終わり-->
+
+        </div><!--mainの終わり-->
+
+        <div class="change-log">
+
+          <div class="article">
+
+            <h2 class="article-title">
+              更新履歴(直近３件)
+            </h2>
+
+            <ul class="article-list">
+
+              <li>
+                <span class="article-list-date">2017年xx月xx日</span><br>
+                <a herf="#">Galaxyの規則を更新しました</a>
+                <span class="label label_normal">rule</span>
+              </li>
+
+            </ul>
+
+          </div><!--articleの終わり-->
+
+        </div><!--change-logの終わり-->
+
+      </div><!--bodyの終わり-->
+
+      <div class="address">
+
+        <dvi class="address-body">
+
+          <strong class="address-body-name">
+            グランブルファンタジー騎空団
+          </strong>
+
+          <strong class="address-body-tel">
+            団長ID(プレイヤー名:niya)16056912<br>
+            Gmail: niyagbf@gmail.com<br>
+            Twitter: @niya_gbf<br>
+            Lobi ID:dd72970 ユーザ名:niya_gbf<br>
+          </strong>
+
+        </dvi><!--address-bodyの終わり-->
+
+      </div><!--addressの終わり-->
+
+      <div class="footer">
+
+        <h>※以下リンク、別タブ開きます</h>
+
+        <div class="footer-nav">
+            <ul class="footer-nav-group">
+                <li><a href="https://mail.google.com/" target="_blank"><i class="fa fa-envelope-o"></i>&nbsp;Mail</a></li>
+                <li><a href="https://twitter.com/niya_gbf" target="_blank"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
+                <li><a href="https://web.lobi.co/" target="_blank"><i class="fa fa-lobi"></i>&nbsp;Lobi</a></li>
+            </ul>
+        </div><!--footer-navの終わり-->
+
+        <div class="footer-text">
+          このサイトはCygamesが運営するオンラインゲーム「グランブルーファンタジー」のファンサイトです.<br>
+        このサイト作成にはゲーム内の画像を使用しており, それらの著作権はCygamesに帰属します.<br>
+        また, 問題がある場合にはniyagbf@gmail.comへ連絡していただければ, 撤去などの対処を行います.
+        </div><!--footer-textの終わり-->
+
+        <div class="footer-copyright">
+        Author: niya
+        </dvi><!--footer-copyrightの終わり-->
+
+      </dvi><!--footerの終わり-->
+
+      <a href="#" class="btn-pagetop" style="display: none;"><i class="fa fa-arrow-up"></i></a>
+
+  </body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Galaxy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./noname.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 175) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body id="top">
+
+    <div class="header">
+        <h1 class="header-title">騎空団 Galaxy</h1>
+        <p class="header-description">このサイトはCygamesが運営するオンラインゲーム「グランブルーファンタジー」のファンサイトです</p>
+    </div>
+
+    <div class="main">
+        <img src="./img/background.jpg" alt="background" class="fix"/>
+        <img src="./img/Tweyen.png" alt="background_Tweyen" class="absolute headerimages" />
+        <img src="./img/Henriette.png" alt="background_Henriette" class="absolute2 headerimages" />
+        <img src="./img/logo.png" alt="background_logo" class="absolute3 headerimages" />
+    </div>
+
+    <div class="body">
+        <div class="nav">
+            <ul class="nav-group">
+                <li><a href="http://game.granbluefantasy.jp/" target="_blank" class="active"><i class="fa fa-home"></i>&nbsp;グラブルへ(Pc版)</a></li>
+                <!--<li><a href="#">記事一覧</a></li>一覧要るほど記事溜まってきたら解放-->
+                <li><a href="http://graburugalaxy.web.fc2.com/Testver/index.html">団の詳細</a></li>
+                <li><a href="#Galaxy_rule">Galaxy規則</a></li>
+                <!--<li><a href="#">マグナ攻略</a></li>かけたら解放-->
+            </ul>
+        </div>
+
+        <div class="content-left">
+            <div class="article">
+                <div class="article-date" id="Galaxy_rule"><i class="fa fa-clock-o"></i>&nbsp;2017年xx月xx日</div>
+                <h2 class="article-title">Galaxy規則</h2>
+                <embed class="img-rounded article-img" alt="#" src="Galaxy.pdf" width="500" height="300"/>
+                <p class="article-paragraph">
+                    規則は上のPDFを見てください。見づらければDL(ダウンロード)して見てください。
+                </p>
+                <h3 class="article-paragraph-title">（ほぼ）毎日やっている団内イベント</h3>
+                <p class="article-paragraph">
+                  月曜日: セレスト<br>
+                  火曜日: コロッサス<br>
+                  水曜日: リヴァイアサン<br>
+                  木曜日: ティアマト<br>
+                  金曜日: シュバリエ<br>
+                  土曜日: ユグドラシル<br>
+                  日曜日: 直近のイベントの有利属性のマグナ<br>
+
+                    <p>上記のマグナをAT(アサルトタイム)中に合計５回出しています。初心者の方はこれに参加するだけである程度武器を集めれて、強くなれるはずです。<br>
+                    また、団長と副団長が都合で無理な時はLobiで通知するので特別な事情がない限りLobiに入ってくれていた方がありがたいです。<br>
+                    団員が出している場合もあるのでそれを見た時は是非にご参加を。<br>
+                  </p>
+
+                  <!--<p>
+                    また、各マグナ攻略については記事一覧のマグナ攻略をご覧ください。特にセレスト、シュバリエは特殊攻撃が多いので注意してください。
+                </p>マグナ攻略かけたら実装-->
+            </div>
+
+            <!--<div class="article">
+                <h2 class="article-title">記事のタイトル</h2>
+                <p class="article-paragraph">
+                    なんか書いとけ
+                    <br>
+                </p>
+                <h3 class="article-paragraph-title">テキスト</h3>
+                <p class="article-paragraph">
+                    <span class="text_normal">テストだよ</span>
+                    <br>
+                    <span class="text_primary">テストだよ</span>
+                    <br>
+                    <span class="text_success">テストだよ</span>
+                    <br>
+                    <span class="text_warning">テストだよ</span>
+                    <br>
+                    <span class="text_danger">テストだよ</span>
+                </p>
+                <h3 class="article-paragraph-title">メッセージ(団のお知らせ的な何か)</h3>
+                <p class="article-paragraph">
+                    <span class="message message_normal">テストだよ</span>
+                    <br>
+                    <span class="message message_default">テストだよ</span>
+                    <br>
+                    <span class="message message_primary">テストだよ</span>
+                    <br>
+                    <span class="message message_success">テストだよ</span>
+                    <br>
+                    <span class="message message_warning">テストだよ</span>
+                    <br>
+                    <span class="message message_danger">テストだよ</span>
+                </p>
+
+                <h3 class="article-paragraph-title">パネル</h3>
+                <div class="panel">
+                    <div class="panel-header">パネルの見出しが入ります</div>
+                    <div class="panel-body">文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+                </div>
+            </div>-->
+
+        </div>
+
+      <div class="content-right">
+            <div class="article">
+                <h2 class="article-title">更新履歴(直近３件)</h2>
+                <ul class="article-list">
+                    <li>
+                        <span class="article-list-date">2017年xx月xx日</span><br>
+                        <a herf="#">Galaxyの規則を更新しました</a>
+                        <span class="label label_normal">rule</span>
+                    </li>
+                    <!--<li>
+                        <span class="article-list-date">20xx年xx月xx日</span><br>
+                        更新情報とか
+                        <span class="label label_primary">ラベル</span>
+                    </li>
+                    <li>
+                        <span class="article-list-date">20xx年xx月xx日</span><br>
+                        更新情報とか
+                        <span class="label label_success">ラベル</span>
+                    </li>
+                    <li>
+                        <span class="article-list-date">20xx年xx月xx日</span><br>
+                        更新情報とか
+                        <span class="label label_warning">ラベル</span>
+                    </li>
+                    <li>
+                        <span class="article-list-date">20xx年xx月xx日</span><br>
+                        更新情報とか
+                        <span class="label label_danger">ラベル</span>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="address">
+        <div class="address-body">
+            <strong class="address-body-name">グランブルファンタジー騎空団Galaxy</strong>
+            <strong class="address-body-tel">団長ID(プレイヤー名:niya)16056912<br>
+            Gmail: niyagbf@gmail.com<br>Twitter: @niya_gbf<br>Lobi ID:dd72970 ユーザ名:niya_gbf<br></strong>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h>※以下リンク、別タブ開きます</h>
+        <div class="footer-nav">
+            <ul class="footer-nav-group">
+                <li><a href="https://mail.google.com/" target="_blank"><i class="fa fa-envelope-o"></i>&nbsp;Mail</a></li>
+                <li><a href="https://twitter.com/niya_gbf" target="_blank"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
+                <li><a href="https://web.lobi.co/" target="_blank"><i class="fa fa-lobi"></i>&nbsp;Lobi</a></li>
+            </ul>
+        </div>
+        <div class="footer-text"> このサイトはCygamesが運営するオンラインゲーム「グランブルーファンタジー」のファンサイトです.<br>
+      このサイト作成にはゲーム内の画像を使用しており, それらの著作権はCygamesに帰属します.<br>
+      また, 問題がある場合にはniyagbf@gmail.comへ連絡していただければ, 撤去などの対処を行います.</div>
+        <div class="footer-copyright">Author: niya</div>
+    </div>
+
+    <a href="#" class="btn-pagetop" style="display: none;"><i class="fa fa-arrow-up"></i></a>
+
+  </body>
+
+</html>
